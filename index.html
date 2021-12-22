@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <header class="header">
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <div class="toggle"></div>
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                <li class="header__item"><a href="#" class="header__link">Menu</a></li>
+                <li class="header__item"><a href="#" class="header__link">About</a></li>
+                <li class="header__item"><a href="#" class="header__link">What's New</a></li>
+                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                <li class="header__item"><span class="themeSwitch"></span></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br><span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At voluptatum illum, aliquam quos tenetur
+                    reprehenderit! Illo aut quasi, in nemo est at maxime esse dignissimos similique, sapiente fugit
+                    accusamus ipsa.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.Earum, a dignissimos. Impedit inventore
+                    dolor repudiandaefugiat eos neque sunt vitae!
+                </p>
+                <a href="#" class="content__btn">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img.png" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li class="sci__item"><a href="#" class="sci__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="sci__item"><a href="#" class="sci__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="sci__item"><a href="#" class="sci__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </section>
+    
+    <script>
+        let themeSwitch = document.querySelector('.themeSwitch');
+        let body = document.querySelector('body');
+        themeSwitch.onclick = function() {
+            themeSwitch.classList.toggle('active');
+            body.classList.toggle('dark'); 
+        }
+        
+        let menutoggle = document.querySelector('.toggle');
+        let header__list = document.querySelector('.header__list');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            header__list.classList.toggle('active');
+          }
+    </script>
+</body>
+
+</html>
